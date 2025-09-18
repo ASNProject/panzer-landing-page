@@ -26,11 +26,11 @@ Landing page untuk Panzer Robotics.
 ## ⚙️ Installation & 🚀 Usage 
 - Clone Project
 ```
-git clone https://github.com/username/project_name.git
+git clone https://github.com/ASNProject/panzer-landing-page.git
 ```
 - Buka Project
 ```
-cd project_name
+cd panzer-landing-page
 ```
 - Install requirements
 ```
