@@ -1,5 +1,9 @@
 import DataImage from "./data";
 import { listTools, listProyek } from "./data";
+import Lottie from "lottie-react";
+import animationData from "./components/animations/animation2.json";
+import React from "react";
+import { Typewriter } from "react-simple-typewriter";
 
 function App() {
 
@@ -9,37 +13,66 @@ function App() {
       <div className="hero grid md:grid-cols-2 pt-10 items-center xl:gap-0 gap-6 grid-cols-1">
         <div className="animate__animated animate__fadeInUp">
           <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
-            <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
+            <img src={DataImage.LogoImage} alt="Logo Image" className="w-10 rounded-md" loading="lazy" />
             <q>Kode yang indah, lahir dari ketekunan.</q>
           </div>
-          <h1 className="text-5xl/tight font-bold mb-6">Hai, Kami Panzer Robotics</h1>
-          <p className="text-base/loose mb-6 opacity-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quisquam, rem accusamus facilis minus in quas saepe recusandae nihil consequuntur iure beatae fugit sapiente, a delectus officiis necessitatibus cum quae.</p>
+          <h1 className="text-5xl/tight font-bold mb-2">Hai, Kami Panzer Robotics</h1>
+          <div className="flex flex-wrap gap-2">
+              <p className="py-1 mb-6 px-3 border border-zinc-500 bg-zinc-600 rounded-md">
+                <Typewriter
+                  words={[
+                    "Mikrokontroler",
+                    "Kecerdasan Buatan",
+                    "Robotika",
+                    "IoT & Otomatisasi",
+                    "Website",
+                    "Aplikasi Mobile"
+                  ]}
+                  loop={true}
+                  cursor
+                  cursorStyle="|"
+                  typeSpeed={80}
+                  deleteSpeed={50}
+                  delaySpeed={1500}
+                />
+              </p>
+          </div>
+          <p className="text-base/loose mb-6 opacity-50">
+            Kami menghadirkan solusi teknologi berbasis mikrokontroler, kecerdasan buatan, robotika, dan IoT untuk mendukung otomasi cerdas dan perkembangan industri masa depan.          </p>
           <div className="flex items-center sm:gap-4 gap-2">
-            <a href="#" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">
-              Download CV <i className="ri-download-line ri-lg"></i></a>
-            <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
-              Lihat Proyek</a>
+            <a href="#kontak" className="bg-red-700 p-4 rounded-2xl hover:bg-red-600">
+              Hubungi Kami <i className="ri-phone-line ri-lg"></i></a>
+            <a  
+                href="https://maps.app.goo.gl/k3LgkS4kYfcxR2yH8"
+                target="_blank"
+                rel="noopener noreferrer"
+            className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
+              Maps <i className="ri-map-pin-line ri-lg"></i></a>
           </div>
         </div>
-        <img src={DataImage.HeroImage} alt="Hero Image" className="w-[500px] md:ml-auto animate__animated animate__fadeInUp" loading="lazy" />
+        <Lottie animationData={animationData} loop autoplay className="animate__animated animate__fadeInUp"/>
       </div>
       
       {/* Tentang */}
       <div className="tentang mt-32 py-10" id="tentang">
         <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
-          <img src={ DataImage.HeroImage } alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
-          <p className="text-base/loose mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque obcaecati saepe velit cupiditate molestiae, aut distinctio ducimus hic alias architecto corrupti placeat natus temporibus nulla beatae! Debitis nostrum provident odit.
+          <img src={ DataImage.LogoImage } alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy" />
+          <p className="text-base/loose mb-4">
+            Panzer Robotics adalah tim pengembang teknologi yang berfokus pada mikrokontroler, kecerdasan buatan (AI), robotika, dan Internet of Things (IoT). Kami menghadirkan solusi inovatif yang dirancang untuk mendukung otomasi, meningkatkan efisiensi, dan membuka peluang baru dalam berbagai bidang seperti pendidikan, industri, dan kehidupan sehari-hari.
           </p>
+          <p className="text-base/loose mb-4">
+            Dengan memadukan riset, kreativitas, dan teknologi mutakhir, Panzer Robotics menciptakan sistem yang tidak hanya canggih tetapi juga bermanfaat nyata. Setiap proyek kami dirancang untuk memberikan nilai guna yang relevan, mulai dari perangkat pintar hingga integrasi sistem otomasi modern.          </p>
+          <p className="text-base/loose mb-10">
+            Kami percaya teknologi adalah jembatan menuju masa depan yang lebih cerdas dan terhubung. Panzer Robotics siap menjadi mitra dalam menghadirkan solusi berbasis inovasi untuk menjawab tantangan era digital.          </p>
           <div className="flex items-center justify-between">
-            <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md sm:block hidden" loading="lazy" />
+            <img src={DataImage.LogoImage} alt="Image" className="w-12 rounded-md sm:block hidden" loading="lazy" />
             <div className="flex items-center gap-6">
               <div>
-                <h1 className="text-4xl mb-1">45<span className="text-violet-500">+</span></h1>
+                <h1 className="text-4xl mb-1">200<span className="text-violet-500">+</span></h1>
                 <p>Proyek Selesai</p>
               </div>
               <div>
-                <h1 className="text-4xl mb-1">4<span className="text-violet-500">+</span></h1>
+                <h1 className="text-4xl mb-1">8<span className="text-violet-500">+</span></h1>
                 <p>Tahun Pengalaman</p>
               </div>
             </div>
@@ -90,26 +123,37 @@ function App() {
       {/* Kontak */}
       <div className="kontak mt-32 sm:p-10 p-0" id="kontak">
         <h1 className="text-4xl mb-2 font-bold text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">Kontak</h1>
-        <p className="text-base/loose text-center mb-10 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Mari terhubung dengan kami.</p>
-          <form action="https://formsubmit.co/asnproject02@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
-            <div className="flex flex-col gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="font-semibold">Nama Lengkap</label>
-                <input type="text" name="nama" placeholder="Masukkan nama" className="border border-zinc-500 p-2 rounded-md" required  />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label className="font-semibold">Email</label>
-                <input type="email" name="email" placeholder="Masukkan email" className="border border-zinc-500 p-2 rounded-md" required  />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label htmlFor="pesan" className="font-semibold">Pesan</label>
-                <textarea name="pesan" id="pesan" cols="45" rows="7" placeholder="Pesan" className="border border-zinc-500 p-2 rounded-md" required></textarea>
-              </div>
-              <div className="text-center">
-                <button type="submit" className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600 mx-auto">Kirim Pesan</button>
-              </div>
+        <p className="text-base/loose text-center mb-1 opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true">Mari terhubung dengan kami.</p>
+        <div className="mb-4 flex justify-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400" data-aos-once="true">
+          <a
+            href="https://wa.me/6285931524888"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 border border-green-500 text-green-500 px-4 py-2 rounded-lg hover:bg-green-500 hover:text-white transition"
+          >
+            <i className="ri-whatsapp-line ri-lg"></i>
+            <span>Whatsapp</span>
+          </a>
+        </div>
+        <form action="https://formsubmit.co/asnproject02@gmail.com" method="POST" className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" data-aos-once="true">
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-2">
+              <label className="font-semibold">Nama Lengkap</label>
+              <input type="text" name="nama" placeholder="Masukkan nama" className="border border-zinc-500 p-2 rounded-md" required  />
             </div>
-          </form>
+            <div className="flex flex-col gap-2">
+              <label className="font-semibold">Email</label>
+              <input type="email" name="email" placeholder="Masukkan email" className="border border-zinc-500 p-2 rounded-md" required  />
+            </div>
+            <div className="flex flex-col gap-2">
+              <label htmlFor="pesan" className="font-semibold">Pesan</label>
+              <textarea name="pesan" id="pesan" cols="45" rows="7" placeholder="Pesan" className="border border-zinc-500 p-2 rounded-md" required></textarea>
+            </div>
+            <div className="text-center">
+              <button type="submit" className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border border-zinc-600 hover:bg-violet-600 mx-auto">Kirim Pesan</button>
+            </div>
+          </div>
+        </form>
       </div>
     </>
   )

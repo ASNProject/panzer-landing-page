@@ -17,23 +17,23 @@ import DataImage from "../data";
 const Footer = () => {
   return (
     <div className='mt-32 py-4 flex md:flex-row flex-col gap-6 md:gap-0 justify-between items-center'>
-        <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy" />
+        <img src={DataImage.LogoImage} alt="Logo Image" className="w-10 rounded-md" loading="lazy" />
         <div className='flex gap-7'>
             <a href="#beranda">Beranda</a>
             <a href="#tentang">Tentang</a>
             <a href="#proyek">Proyek</a>
         </div>
         <div className='flex items-center gap-3'>
-            <a href="#">
+            <a href="https://github.com/ASNProject">
                 <i className='ri-github-fill ri-2x'></i>
             </a>
-            <a href="#">
+            <a href="https://www.instagram.com/panzerrobotics/">
                 <i className='ri-instagram-fill ri-2x'></i>
             </a>
-            <a href="#">
+            <a href="https://www.tiktok.com/@panzerrobotics">
                 <i className='ri-tiktok-fill ri-2x'></i>
             </a>
-            <a href="#">
+            <a href="https://www.youtube.com/@panzerrobotics2296">
                 <i className='ri-youtube-fill ri-2x'></i>
             </a>
         </div>
