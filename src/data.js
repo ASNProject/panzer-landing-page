@@ -248,3 +248,48 @@ export const listBlog = [
     dad: "700",
   },
 ];
+
+import Layanan1 from "/assets/blog/blog1.webp";
+import Layanan2 from "/assets/blog/blog2.webp";
+import Layanan3 from "/assets/blog/blog3.webp";
+import Layanan4 from "/assets/blog/blog4.webp";
+import Layanan5 from "/assets/blog/blog5.webp";
+import Layanan6 from "/assets/blog/blog6.webp";
+
+export const listLayanan = [
+  {
+    id: 1,
+    gambar: Layanan1,
+    nama: "Jasa Konsultasi Project",
+    desk: "Kami membantu Anda dalam merancang, menganalisis, dan mengembangkan proyek teknologi dengan solusi yang efisien dan tepat sasaran. Mulai dari perencanaan sistem, desain arsitektur, hingga strategi implementasi.",
+    dad: "200",
+  },
+  {
+    id: 2,
+    gambar: Layanan2,
+    nama: "Pembuatan Proyek Kustom",
+    desk: "Kami menyediakan layanan pembuatan proyek sesuai kebutuhan dan permintaan Anda. Setiap proyek dirancang secara khusus untuk menjawab tantangan unik bisnis atau riset Anda, baik dari sisi desain, fungsi, maupun integrasi teknologi.",
+    dad: "300",
+  },
+  {
+    id: 3,
+    gambar: Layanan3,
+    nama: "Pembuatan Robotika, IoT dan AI",
+    desk: "Kami mengembangkan sistem berbasis robotika, Internet of Things (IoT), dan Artificial Intelligence (AI) untuk otomasi, pemantauan, dan pengambilan keputusan yang lebih cerdas. Cocok untuk proyek riset, pendidikan, maupun industri.",
+    dad: "400",
+  },
+  {
+    id: 4,
+    gambar: Layanan4,
+    nama: "Pembuatan Otomasi dan Kendali",
+    desk: "Kami menawarkan solusi pembuatan sistem otomasi industri dan kendali berbasis mikrokontroler maupun PLC. Didesain untuk meningkatkan efisiensi, akurasi, dan keamanan proses produksi Anda.",
+    dad: "500",
+  },
+  {
+    id: 5,
+    gambar: Layanan5,
+    nama: "Pembuatan Aplikasi dan Website",
+    desk: "Kami membuat aplikasi web dan mobile yang modern, cepat, serta responsif. Mulai dari website profil perusahaan, sistem informasi, hingga aplikasi berbasis data dan dashboard interaktif.",
+    dad: "600",
+  },
+];

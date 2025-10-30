@@ -20,6 +20,7 @@ Landing page untuk Panzer Robotics.
 ## ✨ Features  
 - Beranda 
 - Tentang
+- Layanan Kami
 - Tools
 - Kontak
 
