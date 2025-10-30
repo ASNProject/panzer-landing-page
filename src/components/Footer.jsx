@@ -20,8 +20,9 @@ const Footer = () => {
         <img src={DataImage.LogoImage} alt="Logo Image" className="w-10 rounded-md" loading="lazy" />
         <div className='flex gap-7'>
             <a href="#beranda">Beranda</a>
+            <a href="#layanan">Layanan Kami</a>
             <a href="#tentang">Tentang</a>
-            <a href="#proyek">Proyek</a>
+            <a href="#blog">Blog</a>
         </div>
         <div className='flex items-center gap-3'>
             <a href="https://github.com/ASNProject">
