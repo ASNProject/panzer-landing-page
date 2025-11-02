@@ -106,7 +106,7 @@ function App() {
           >
             Kami tawarkan layanan untuk memenuhi kebutuhan anda
           </p>
-          <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 justify-between z-10 hidden md:flex pointer-events-none">
+          <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 justify-between z-10 hidden md:flex pointer-events-none" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <button
               className="swiper-button-prev-custom pointer-events-auto bg-zinc-700 hover:bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg -ml-14"
             >
@@ -124,7 +124,7 @@ function App() {
             </button>
           </div>
           {/* Swiper */}
-          <div className="blog-box mt-14">
+          <div className="blog-box mt-14" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
             <Swiper
               modules={[Pagination, Navigation]}
               spaceBetween={20}
@@ -151,7 +151,7 @@ function App() {
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="flex justify-center gap-6 mt-6 md:hidden">
+            <div className="flex justify-center gap-6 mt-6 md:hidden" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
               <button className="swiper-button-prev-custom bg-zinc-700 hover:bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
